@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    /*** Interesting..... Refer to http://stackoverflow.com/questions/4698054/css-does-the-width-include-the-padding */
+    /*** Should Smooth the Fonts **/
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background-color: #fff;
+    font-size: 16.6399993896484px;
+    padding-top: 4.375rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+
+/*** Basic Layout Elements **/
+.content {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+
+/*** Basic UI Elements ****/
+.button {
+    display: inline-block;
+    background-color: #f15a29;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    width: 9.688rem;
+    border: 1px solid #f15a29;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+}
+
+/** Clearfix **/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*** Top Navigation Bar ****/
+.top-navigation {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4.375rem;
+}
+
+.top-navigation > .content {
+    height: 4.375rem;
+}
+
+.top-navigation .nav-items {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.top-navigation .nav-items > li {
+    display: inline-block;
+    margin-left: 1.5625rem;
+}
+
+.top-navigation .nav-items > li > a {
+    display: inline-block;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    text-decoration: none;
+    color: #838994;
+    transition: color 1.0s ease;
+}
+.top-navigation .nav-items > li.active > a {
+    font-weight: 500;
+}
+.top-navigation .nav-items > li.active > a,
+.top-navigation .nav-items > li > a:hover
+{
+    color: #4c5058;
+}
+
+/*** AFeature ****/
+.afeature {
+    height: 45.9375rem;
+    background: url(../img/afeature-background.jpg) no-repeat 50% 100%;
+    background-size: cover;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+.afeature > .afeature-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.afeature h1, .afeature h3 {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.afeature h1 {
+    margin-bottom: 1.25rem;
+    font-size: 3.125rem;
+}
+
+.afeature h3 {
+    font-size: 1.5625rem;
+    margin-bottom: 1.5625rem;
+}
