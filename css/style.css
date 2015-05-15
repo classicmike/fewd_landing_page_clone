@@ -51,6 +51,7 @@ ol, ul {
     width: 9.688rem;
     border: 1px solid #f15a29;
     transition: all 0.5s ease;
+    line-height: 1.33;
 }
 
 .button:hover {
@@ -119,7 +120,7 @@ ol, ul {
 
 /*** AFeature ****/
 .afeature {
-    height: 45.9375rem;
+    height: 41.5625rem;
     background: url(../img/afeature-background.jpg) no-repeat 50% 100%;
     background-size: cover;
     -webkit-transform-style: preserve-3d;
