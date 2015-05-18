@@ -181,3 +181,64 @@ ol, ul {
     font-size: 1.563rem;
     margin: 2.5rem 0 1.875rem;
 }
+
+/**** Footer *****/
+.site-footer {
+    text-align: center;
+}
+
+.site-footer .content {
+    border-top: 1px solid rgb(234, 235, 236);
+    padding-top: 1.3125rem;
+    padding-bottom: 9.375rem;
+}
+
+.site-footer h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.site-footer .social-media {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.site-footer .social-media > li {
+    display: inline-block;
+}
+
+.site-footer .social-media > li > a {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 10rem;
+    border: 1px solid rgb(234, 235, 236);
+    padding: 0.625rem 0;
+    margin: 0 0.3125rem;
+}
+
+.site-footer .social-media > li.twitter > a {
+    color: rgb(85, 172, 238);
+}
+
+.site-footer .social-media > li.facebook > a {
+    color: rgb(76, 102, 164);
+}
+
+.site-footer .social-media > li.instagram > a {
+    color: rgb(63, 114, 155);
+}
+
+
+
+.copyright {
+    font-size: 0.875rem;
+    color: #838994;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
